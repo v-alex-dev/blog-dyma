@@ -55,6 +55,15 @@ header {
     font-weight: 700;
 }
 
+.header-menu li{
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.header-menu a:hover {
+    background-color: var(--dark-primary);
+}
+
 .logo {
     font-weight: 700;
     font-size: 2rem;
