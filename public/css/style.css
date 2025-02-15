@@ -70,6 +70,10 @@ header {
     color: var(--text-light)
 }
 
+.active {
+    background-color: var(--dark-primary);
+    opacity: 0.8;
+}
 /* FOOTER */
 footer {
     background: var(--dark);
