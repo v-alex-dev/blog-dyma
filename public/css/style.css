@@ -47,6 +47,12 @@ header {
     background-color: var(--text-alert);
     box-shadow: var(--box-shadow);
     padding: 1.8rem;
+    color: var(--text-light);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
 }
 
 .logo {
