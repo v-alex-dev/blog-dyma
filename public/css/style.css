@@ -9,6 +9,15 @@
 
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+}
+
 /* THEME */
 :root {
     --font-family: 'Open-sans', sans-serif;
