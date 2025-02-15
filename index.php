@@ -8,10 +8,10 @@
     <title>Blog</title>
 </head>
 <body class="container">
-<?php require_once 'includes/header.php' ?>
-<div class="content">
+    <?php require_once 'includes/header.php' ?>
+    <div class="content">
 
-</div>
+    </div>
 <?php require_once 'includes/footer.php' ?>
 </body>
 </html>
