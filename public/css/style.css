@@ -22,6 +22,7 @@ a {
 :root {
     --font-family: 'Open-sans', sans-serif;
     --primary: #8e44ad;
+    --dark-primary: #7f8c8d;
     --dark: #34495e;
     --background-light: #ecf0f1;
     --text-color: #444;
