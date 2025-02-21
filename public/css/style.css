@@ -18,6 +18,7 @@ a {
     font-size: 1.2rem;
 }
 
+
 /* THEME */
 :root {
     --font-family: 'Open-sans', sans-serif;
@@ -36,12 +37,30 @@ html, body {
     color: black;
     font-family: var(--font-family);
     background-color: var(--background-light);
+    font-size: 0.65rem;
 }
 
 h1 {
     margin-bottom: 1rem;
 }
 
+input {
+    border:0.5px solid;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+select{
+    border: 0.5px solid;
+    border-radius: 1rem;
+    padding: 0.2rem;
+}
+
+textarea {
+    border: 0.5px solid;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
 /* HEADER */
 header {
     background-color: var(--text-alert);
@@ -124,16 +143,7 @@ footer {
     color: var(--text-light);
 }
 
-/* CONTENT */
-.content {
-    max-width: 100rem;
-    width: 100%;
-    flex: 1;
-    flex-flow: column;
-    align-self: center;
-    align-items: center;
-    background-color: var(--dark);
-}
+
 
 /* BLOGS */
 
@@ -153,21 +163,25 @@ footer {
     font-weight: bold;
 }
 
-/* FORM */
-.blog-form {
+/* CONTENT */
+.content {
     display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    margin-bottom: 4rem;
-}
-
-.blog-form input {
+    max-width: 100rem;
+    width: 100%;
     flex: 1;
-    margin-right: 0.5rem;
-    border: var(--border);
-    border-radius: 2rem;
-    padding: 1rem;
-    text-align: center;
-    font-weight: 700;
+    flex-flow: column;
+    align-self: center;
+    align-items: center;
+    background-color: var(--dark);
 }
 
+/* block */
+
+.block {
+    border-radius: 1rem;
+    max-width:40rem;
+    border: var(--border);
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+}
