@@ -21,14 +21,20 @@
                 <label for="title">Titre</label>
                 <input type="text" name="title" id="title">
                 <!-- <p class='text-error'></p> -->
+            </div>
+            <div class="form-control">
                 <label for='image'>Image</label>
                 <input type="text" name="image" id="image">
                 <!-- <p class='text-error'></p> -->
+            </div>
+            <div class="form-control">
                 <label for="category">Catégorie</label>
                 <input type="text" name="category" id="category">
                 <!-- <p class='text-error'></p> -->
+            </div>
                 <label for="content">Content</label>
                 <input type="text" name="content" id="content">
+            </div>
                 <!-- <p class='text-error'></p> -->
             </div>
         </form>
