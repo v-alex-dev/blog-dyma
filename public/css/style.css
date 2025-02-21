@@ -126,12 +126,13 @@ footer {
 
 /* CONTENT */
 .content {
+    max-width: 100rem;
+    width: 100%;
     flex: 1;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
+    flex-flow: column;
+    align-self: center;
     align-items: center;
-
+    background-color: var(--dark);
 }
 
 /* BLOGS */
