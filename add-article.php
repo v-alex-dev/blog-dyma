@@ -15,38 +15,40 @@
     <?php include_once 'includes/header.php'?>
 
     <div class="content">
-        <h1>Ecrire un article</h1>
-        <form action="/add-article.php" method="post">
-            <div class="form-control">
-                <label for="title">Titre</label>
-                <input type="text" name="title" id="title">
-                <!-- <p class='text-error'></p> -->
-            </div>
-            <div class="form-control">
-                <label for='image'>Image</label>
-                <input type="text" name="image" id="image">
-                <!-- <p class='text-error'></p> -->
-            </div>
-            <div class="form-control">
-                <label for="category">Catégorie</label>
-                <input type="text" name="category" id="category">
-                <select name="category" id="category">
-                    <option value="technology">Technologie</option>
-                    <option value="nature">Nature</option>
-                    <option value="politic">Politique</option>
-                </select>
-                <!-- <p class='text-error'></p> -->
-            </div>
-            <div class="form-control">
-                <label for="content">Content</label>
-                <textarea name="content" id="content" ></textarea>
-            </div>
+        <div class="block form-container">
+            <h1>Ecrire un article</h1>
+            <form action="/add-article.php" method="post">
+                <div class="form-control">
+                    <label for="title">Titre</label>
+                    <input type="text" name="title" id="title">
+                    <!-- <p class='text-error'></p> -->
+                </div>
+                <div class="form-control">
+                    <label for='image'>Image</label>
+                    <input type="text" name="image" id="image">
+                    <!-- <p class='text-error'></p> -->
+                </div>
+                <div class="form-control">
+                    <label for="category">Catégorie</label>
+                    <input type="text" name="category" id="category">
+                    <select name="category" id="category">
+                        <option value="technology">Technologie</option>
+                        <option value="nature">Nature</option>
+                        <option value="politic">Politique</option>
+                    </select>
+                    <!-- <p class='text-error'></p> -->
+                </div>
+                <div class="form-control">
+                    <label for="content">Content</label>
+                    <textarea name="content" id="content" ></textarea>
+                </div>
                 <!-- <p class='text-error'></p> -->
                 <div class="form-action">
                     <button class="btn btn-secondary">Annuler</button>
                     <button class="btn btn-primary">Sauvegarder</button>
                 </div>
-        </form>
+            </form>
+        </div>
     </div>
     <?php include_once 'includes/footer.php' ?>
 </body>
