@@ -32,11 +32,15 @@
                 <input type="text" name="category" id="category">
                 <!-- <p class='text-error'></p> -->
             </div>
+            <div class="form-control">
                 <label for="content">Content</label>
-                <input type="text" name="content" id="content">
+                <textarea name="content" id="content" ></textarea>
             </div>
                 <!-- <p class='text-error'></p> -->
-            </div>
+                <div class="form-action">
+                    <button class="btn btn-secondary">Annuler</button>
+                    <button class="btn btn-primary">Sauvegarder</button>
+                </div>
         </form>
     </div>
     <?php include_once 'includes/footer.php' ?>
