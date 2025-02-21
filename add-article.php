@@ -30,6 +30,11 @@
             <div class="form-control">
                 <label for="category">Catégorie</label>
                 <input type="text" name="category" id="category">
+                <select name="category" id="category">
+                    <option value="technology">Technologie</option>
+                    <option value="nature">Nature</option>
+                    <option value="politic">Politique</option>
+                </select>
                 <!-- <p class='text-error'></p> -->
             </div>
             <div class="form-control">
