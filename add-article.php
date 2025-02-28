@@ -63,7 +63,8 @@
 		            'title' => $title,
 		            'image' => $image,
 		            'category' => $category,
-		            'content' => $content
+		            'content' => $content,
+                    'id' => time()
 	            ]];
 	            file_put_contents($filename, json_encode($articles));
             }
