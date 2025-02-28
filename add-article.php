@@ -104,7 +104,7 @@
                 <!-- <p class='text-error'></p> -->
                 <div class="form-action">
                     <a href="/" class="btn btn-secondary">Annuler</a>
-                    <button class="btn btn-primary">Sauvegarder</button>
+                    <button class="btn btn-primary" type="submit">Sauvegarder</button>
                 </div>
             </form>
         </div>
