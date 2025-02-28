@@ -50,6 +50,12 @@
         } elseif (mb_strlen($content) < 50) {
             $errors['content'] = ERROR_CONTENT_TOO_SHORT;
         }
+
+        if(!count(array_filter($errors, fn($e) => $e !== ''))){
+            echo "c'est ok";
+        }else{
+            print_r($errors);
+        }
     }
 ?>
 
