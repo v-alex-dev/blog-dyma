@@ -41,7 +41,7 @@
 	    }
 
 	    if(!$category){
-		    $errors['title'] = ERROR_REQUIRED;
+		    $errors['category'] = ERROR_REQUIRED;
 	    }
     }
 ?>
