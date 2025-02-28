@@ -2,8 +2,9 @@
     const ERROR_REQUIRED = 'Veuillez renseigner ce champ';
     const ERROR_CONTENT_TOO_SHORT = 'L\'article est trop court';
     const ERROR_TITLE_TOO_SHORT = 'Le titre est trop court';
-
     const ERROR_IMAGE_URL = 'L\'image doit être une url valide';
+
+    $filename = __DIR__ . '/data/articles.json';
 
     $errors = [
             'title' => '',
@@ -13,6 +14,11 @@
     ];
 
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
+
+        if (file_exists($filename)){
+            $articles = json_decode(file_get_contents($filename), true) ?? [];
+        }
+
         $_POST = filter_input_array(INPUT_POST, [
                 'title' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
                 'image' => FILTER_SANITIZE_URL,
@@ -52,9 +58,15 @@
         }
 
         if(!count(array_filter($errors, fn($e) => $e !== ''))){
-            echo "c'est ok";
-        }else{
-            print_r($errors);
+            if(isset($articles)){
+	            $articles = [...$articles, [
+		            'title' => $title,
+		            'image' => $image,
+		            'category' => $category,
+		            'content' => $content
+	            ]];
+	            file_put_contents($filename, json_encode($articles));
+            }
         }
     }
 ?>
