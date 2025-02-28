@@ -22,6 +22,12 @@
                         'flags' => FILTER_FLAG_NO_ENCODE_QUOTES
                 ]
         ]);
+
+        $title = $_POST['title'] ?? '';
+	    $image = $_POST['image'] ?? '';
+	    $category = $_POST['category'] ?? '';
+	    $content = $_POST['content'] ?? '';
+
     }
 ?>
 
