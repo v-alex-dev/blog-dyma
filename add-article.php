@@ -39,6 +39,10 @@
 	    } elseif(!filter_var($image, FILTER_VALIDATE_URL)){
 		    $errors['image'] = ERROR_IMAGE_URL;
 	    }
+
+	    if(!$category){
+		    $errors['title'] = ERROR_REQUIRED;
+	    }
     }
 ?>
 
