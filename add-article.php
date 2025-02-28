@@ -5,6 +5,12 @@
 
     const ERROR_IMAGE_URL = 'L\'image doit être une url valide';
 
+    $errors = [
+            'title' => '',
+            'image' => '',
+            'category' => '',
+            'content' => ''
+    ];
 
 
 ?>
