@@ -43,6 +43,18 @@
 	    if(!$category){
 		    $errors['category'] = ERROR_REQUIRED;
 	    }
+
+	    if(!$title){
+		    $errors['title'] = ERROR_REQUIRED;
+	    } elseif(mb_strlen($title < 5)){
+		    $errors['title'] = ERROR_TITLE_TOO_SHORT;
+	    }
+
+        if(!$content){
+            $errors['content'] = ERROR_REQUIRED;
+        } elseif (mb_strlen($content) < 50) {
+            $errors['content'] = ERROR_CONTENT_TOO_SHORT;
+        }
     }
 ?>
 
