@@ -30,11 +30,15 @@
 
         if(!$title){
             $errors['title'] = ERROR_REQUIRED;
-        } else if(mb_strlen($title < 5)){
+        } elseif(mb_strlen($title < 5)){
             $errors['title'] = ERROR_TITLE_TOO_SHORT;
         }
 
-
+	    if(!$image){
+		    $errors['image'] = ERROR_REQUIRED;
+	    } elseif(!filter_var($image, FILTER_VALIDATE_URL)){
+		    $errors['image'] = ERROR_IMAGE_URL;
+	    }
     }
 ?>
 
