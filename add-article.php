@@ -44,11 +44,6 @@
 		    $errors['category'] = ERROR_REQUIRED;
 	    }
 
-	    if(!$title){
-		    $errors['title'] = ERROR_REQUIRED;
-	    } elseif(mb_strlen($title < 5)){
-		    $errors['title'] = ERROR_TITLE_TOO_SHORT;
-	    }
 
         if(!$content){
             $errors['content'] = ERROR_REQUIRED;
