@@ -93,14 +93,14 @@
                     <label for="title">Titre</label>
                     <input type="text" name="title" id="title">
                     <?php if($errors['title']) :  ?>
-                        <p class='text-error'> <?= $errors['title']?></p>
+                        <p class='text-danger'> <?= $errors['title']?></p>
                     <?php endif; ?>
                 </div>
                 <div class="form-control">
                     <label for='image'>Image</label>
                     <input type="text" name="image" id="image">
 	                <?php if($errors['image']) :  ?>
-                      <p class='text-error'> <?= $errors['image']?></p>
+                      <p class='text-danger'> <?= $errors['image']?></p>
 	                <?php endif; ?>
                 </div>
                 <div class="form-control">
@@ -112,7 +112,7 @@
                         <option value="politic">Politique</option>
                     </select>
 	                <?php if($errors['category']) :  ?>
-                      <p class='text-error'> <?= $errors['category']?></p>
+                      <p class="text-danger"> <?= $errors['category']?></p>
 	                <?php endif; ?>
                 </div>
                 <div class="form-control">
@@ -120,7 +120,7 @@
                     <textarea name="content" id="content" ></textarea>
                 </div>
 	            <?php if($errors['content']) :  ?>
-                  <p class='text-error'> <?= $errors['content']?></p>
+                  <p class="text-danger"> <?= $errors['content']?></p>
 	            <?php endif; ?>
                 <div class="form-action">
                     <a href="/" class="btn btn-secondary">Annuler</a>
