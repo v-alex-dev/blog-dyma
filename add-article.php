@@ -92,12 +92,16 @@
                 <div class="form-control">
                     <label for="title">Titre</label>
                     <input type="text" name="title" id="title">
-                    <!-- <p class='text-error'></p> -->
+                    <?php if($errors['title']) :  ?>
+                        <p class='text-error'> <?= $errors['title']?></p>
+                    <?php endif; ?>
                 </div>
                 <div class="form-control">
                     <label for='image'>Image</label>
                     <input type="text" name="image" id="image">
-                    <!-- <p class='text-error'></p> -->
+	                <?php if($errors['image']) :  ?>
+                      <p class='text-error'> <?= $errors['image']?></p>
+	                <?php endif; ?>
                 </div>
                 <div class="form-control">
                     <label for="category">Catégorie</label>
@@ -107,13 +111,17 @@
                         <option value="nature">Nature</option>
                         <option value="politic">Politique</option>
                     </select>
-                    <!-- <p class='text-error'></p> -->
+	                <?php if($errors['category']) :  ?>
+                      <p class='text-error'> <?= $errors['category']?></p>
+	                <?php endif; ?>
                 </div>
                 <div class="form-control">
                     <label for="content">Content</label>
                     <textarea name="content" id="content" ></textarea>
                 </div>
-                <!-- <p class='text-error'></p> -->
+	            <?php if($errors['content']) :  ?>
+                  <p class='text-error'> <?= $errors['content']?></p>
+	            <?php endif; ?>
                 <div class="form-action">
                     <a href="/" class="btn btn-secondary">Annuler</a>
                     <button class="btn btn-primary" type="submit">Sauvegarder</button>
