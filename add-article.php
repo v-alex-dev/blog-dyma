@@ -28,6 +28,13 @@
 	    $category = $_POST['category'] ?? '';
 	    $content = $_POST['content'] ?? '';
 
+        if(!$title){
+            $errors['title'] = ERROR_REQUIRED;
+        } else if(mb_strlen($title < 5)){
+            $errors['title'] = ERROR_TITLE_TOO_SHORT;
+        }
+
+
     }
 ?>
 
